@@ -1,11 +1,13 @@
-function checkForSpam(message) {
- if (message.indexOf('spam' || 'sale'));
- userInput.toLowerCase();
- {
+function checkForSpam(message) 
+
+{   const isSpam = message.toLowerCase();
+    if (isSpam.includes('spam') || isSpam.includes('sale'))
+        {
     return true;
  }
+ 
   else {
-    false;
+    return false;
   }
 }
 
